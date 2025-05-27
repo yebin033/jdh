@@ -8,7 +8,7 @@ st.title("📦 배달 위치 군집화 (K-Means)")
 
 # 데이터 로드
 try:
-    df = pd.read_csv("https://raw.githubusercontent.com/jdh123/delivery-clustering/main/Delivery.csv")
+    df = pd.read_csv("Delivery.csv")
 except Exception as e:
     st.error(f"❌ 데이터 파일을 불러올 수 없습니다: {e}")
     st.stop()
