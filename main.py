@@ -7,7 +7,7 @@ import streamlit as st
 st.title("📦 배달 위치 군집화 (K-Means)")
 
 # Load data
-df = pd.read_csv("Delivery.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/jdh123/delivery-clustering/main/Delivery.csv")
 X = df[['Latitude', 'Longitude']]
 
 # Elbow Method
@@ -29,5 +29,5 @@ fig, ax = plt.subplots()
 sns.scatterplot(data=df, x="Longitude", y="Latitude", hue="Cluster", palette="tab10", ax=ax)
 plt.title("📍 클러스터링 결과")
 st.pyplot(fig)
-df = pd.read_csv("https://raw.githubusercontent.com/사용자이름/저장소이름/브랜치이름/Delivery.csv")
+
 
